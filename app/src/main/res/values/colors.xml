@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <!-- light -->
+    <color name="white">#FFFFFFFF</color>
+    <color name="second_light">#3498db</color>
+    <color name="third_light"> #D3D3D3</color>
+
+    <!-- dark -->
+    <color name="first_dark">#081C24</color>
+    <color name="second_dark">#10475E</color>
+    <color name="third_dark">#2E626F</color>
+
+</resources>
