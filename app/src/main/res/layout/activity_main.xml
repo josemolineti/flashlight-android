@@ -8,13 +8,18 @@
 
     <ImageButton
         android:id="@+id/flashlight_button"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:background="@drawable/flashlight_button_shape"
+        android:src="@drawable/ic_flashlight"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/ic_flashlight"
+
+
+
+
         />
     <!--android:contentDescription="A Flashlight Icon"-->
 
