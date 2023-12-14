@@ -3,8 +3,10 @@
     <color name="black">#FF000000</color>
     <!-- light -->
     <color name="white">#FFFFFFFF</color>
-    <color name="second_light">#3498db</color>
-    <color name="third_light"> #D3D3D3</color>
+    <color name="second_light">#E6F2F2</color>
+    <color name="third_light"> #CCCCCC</color>
+    <color name="second_press_light">#B0BABA</color>
+    <color name="third_press_light">#A5A5A5</color>
 
     <!-- dark -->
     <color name="first_dark">#081C24</color>
