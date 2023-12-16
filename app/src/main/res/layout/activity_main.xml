@@ -4,27 +4,58 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:background="@color/white"
     tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Switch
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ImageButton
         android:id="@+id/flashlight_button"
-        android:background="@drawable/flashlight_button_shape"
-        android:src="@drawable/ic_flashlight"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:background="@drawable/flashlight_button_shape"
+        android:clickable="false"
+        android:focusable="false"
+        android:src="@drawable/ic_flashlight"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:clickable="false"
-        android:focusable="false"
 
         />
-    <!--android:contentDescription="A Flashlight Icon"-->
+
+    <SeekBar
+        android:id="@+id/intensity_progress"
+        android:layout_width="244dp"
+        android:layout_height="24dp"
+        android:max="5"
+        android:min="1"
+        android:progress="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flashlight_button" />
+
+
 
 
 
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+

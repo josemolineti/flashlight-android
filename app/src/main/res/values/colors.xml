@@ -12,5 +12,6 @@
     <color name="first_dark">#081C24</color>
     <color name="second_dark">#10475E</color>
     <color name="third_dark">#2E626F</color>
-
+    <color name="second_press_dark">#0D3647</color>
+    <color name="third_press_dark">#1E3E47</color>
 </resources>

@@ -2,9 +2,27 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Flashlight" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Customize your light theme here. -->
-        <item name="backgroundColor">@color/white</item>
+
 
     </style>
 
     <style name="Theme.Flashlight" parent="Base.Theme.Flashlight" />
+
+    <!-- Light mode -->
+    <style name="BACKGROUND">
+        <item name="background">@color/white</item>
+    </style>
+    <style name="TEXT">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="BUTTON">
+        <item name="cornerRadius">12dp</item>
+        <item name="android:src">@drawable/flashlight_button_shape</item>
+    </style>
+    <style name="BUTTON_PRESSED">
+        <item name="android:src">@drawable/flashlight_button_shape_press</item>
+    </style>
+
+
+
 </resources>
