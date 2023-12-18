@@ -30,6 +30,7 @@ public class FlashlightOperator {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             try {
                 camera.setTorchMode(cameraId, true);
+                isTorchOn = true;
                 view.setActivated(true);
             } catch (CameraAccessException e) {
                 Toast.makeText(context, "The flashlight can not be activated. Error: "+e, Toast.LENGTH_LONG).show();
@@ -46,6 +47,7 @@ public class FlashlightOperator {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             try {
                 camera.setTorchMode(cameraId, false);
+                isTorchOn = false;
                 view.setActivated(false);
             } catch (CameraAccessException e) {
                 Toast.makeText(context, "The flashlight can not be activated. Error: "+e, Toast.LENGTH_LONG).show();

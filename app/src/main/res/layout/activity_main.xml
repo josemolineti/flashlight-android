@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    style="@style/BACKGROUND"
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -15,12 +15,13 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <Switch
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:id="@+id/theme_mode_switcher"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            />
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -28,7 +29,7 @@
         android:id="@+id/flashlight_button"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:background="@drawable/flashlight_button_shape"
+        style="@style/BUTTON"
         android:clickable="false"
         android:focusable="false"
         android:src="@drawable/ic_flashlight"
