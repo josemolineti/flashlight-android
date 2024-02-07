@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/slider_background"
+        android:height="10dp"
+        android:bottom="10dp"
+        android:top="10dp"
+        >
+
+        <shape>
+            <solid android:color="@color/third_light"/>
+            <corners android:radius="8dp"/>
+        </shape>
+    </item>
+
+    <item
+        android:id="@+id/slider_progress"
+        android:height="16dp"
+        android:top="7dp"
+        android:bottom="7dp">
+
+        <clip
+            android:clipOrientation="horizontal"
+            android:gravity="left">
+
+            <shape android:shape="rectangle">
+                <solid android:color="@color/black"/>
+            </shape>
+        </clip>
+
+    </item>
+</layer-list>

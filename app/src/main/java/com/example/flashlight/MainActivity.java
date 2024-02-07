@@ -4,6 +4,7 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
@@ -16,8 +17,9 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     ImageButton main_button_flashlight;
-    SeekBar intensity_flash_progress;
+    //obsolete SeekBar intensity_flash_progress;
 
+    @SuppressLint("UseSwitchCompatOrMaterialCode")
     Switch theme_mode_switcher;
     boolean darkMODE;
     SharedPreferences sharedPreferences;
@@ -34,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
         FlashlightOperator flashlightOperator = new FlashlightOperator(MainActivity.this);
         main_button_flashlight = findViewById(R.id.flashlight_button);
-        intensity_flash_progress = findViewById(R.id.intensity_progress);
+        //obsolete intensity_flash_progress = findViewById(R.id.intensity_progress);
         theme_mode_switcher = findViewById(R.id.theme_mode_switcher);
 
         sharedPreferences = getSharedPreferences("MODE", Context.MODE_PRIVATE);
@@ -97,21 +99,22 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        intensity_flash_progress.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                flashlightOperator.changeFlashlightIntensity(i, MainActivity.this);
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-
-            }
-        });
+        //obsolete
+//        intensity_flash_progress.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+//            @Override
+//            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+//                flashlightOperator.changeFlashlightIntensity(i, MainActivity.this);
+//            }
+//
+//            @Override
+//            public void onStartTrackingTouch(SeekBar seekBar) {
+//
+//            }
+//
+//            @Override
+//            public void onStopTrackingTouch(SeekBar seekBar) {
+//
+//            }
+//        });
     }
 }

@@ -15,4 +15,9 @@
         <item name="cornerRadius">12dp</item>
         <item name="android:background">@drawable/flashlight_button_shape_dark</item>
     </style>
+    <style name="SLIDER" parent="Base.Theme.Flashlight">
+        <item name="android:thumb">@drawable/slider_thumb_dark</item>
+        <item name="android:progressDrawable">@drawable/slider_progress_light</item>
+        <item name="android:layout_margin">20dp</item>
+    </style>
 </resources>
